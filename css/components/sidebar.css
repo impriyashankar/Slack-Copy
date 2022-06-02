@@ -1,0 +1,59 @@
+.slack-info{
+  background-color: rgb(83, 16, 83);
+  /*width:15%;*/
+  padding-left:15px;
+  color:rgb(200, 165, 165);
+  width:200px;
+  flex-shrink:0;
+}
+h2 {
+  color:#fff;
+}
+.sidebar-title p{
+  margin:10px 0;
+}
+p.sidebar-item {
+  margin:5px;
+}
+
+.sidebar-title {
+  display:flex;
+  justify-content:space-around;
+  color:#fff;
+}
+.sidebar-title i{
+  margin-top:10px;
+}
+
+.sidebar-title:nth-child(2){
+  margin-top:10px;
+}
+
+.channel-sidebar-items .sidebar-item::before{
+  content: "\e4be";
+  /*font-family:"Font Awesome 5 Free";
+  font-weight:400;*/
+  font: var(--fa-font-solid);
+  margin-right:5px;
+
+}
+.channel-sidebar-items .sidebar-item.lock::before{
+  content: "\f023";
+  font: var(--fa-font-solid);
+  margin-right:5px;
+
+}
+
+.dm-sidebar-items .sidebar-item::before, .online-users::before{
+  content:'';
+  display:inline-block;
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background-color:grey;
+  margin-right:5px;
+}
+.dm-sidebar-items .sidebar-item.online::before,.online-users::before
+{
+  background-color:green;
+}
